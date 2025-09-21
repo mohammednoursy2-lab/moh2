@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>نموذج التسجيل</title>
+</head>
+<body>
+
+  <h2>نموذج التسجيل</h2>
+  <form action="" method="post">
+    <p>الاسم الأول: <input type="text" name="firstname" required autofocus></p><tr>
+    <p>الاسم الأوسط: <input type="text" name="middle"></p>
+    <p>الكنية: <input type="text" name="lastname" required></p>
+
+    <p>المدينة: <input type="text" name="city"></p>
+
+    <p>المحافظة:
+      <select name="province">
+        <option value="">اختر المحافظة</option>
+        <option value="دمشق">دمشق</option>
+        <option value="حلب">حلب</option>
+        <option value="حمص">حمص</option>
+        <option value="حماة">حماة</option>
+      </select>
+    </p>
+
+    <p>الجنس:
+      <input type="radio" name="gender" value="ذكر" checked> ذكر
+      <input type="radio" name="gender" value="أنثى"> أنثى
+    </p>
+
+    <p>الدورات:
+      <input type="checkbox" name="course1" value="Created Sites"> مواقع منشأة
+      <input type="checkbox" name="course2" value="Hosted Sites"> مواقع مستضافة
+      <input type="checkbox" name="course3" value="Other"> أخرى
+    </p>
+
+    <p>البريد الإلكتروني: <input type="email" name="email" required></p> <tr>
+    <p>اسم المستخدم: <input type="text" name="username" required></p>
+    <p>كلمة المرور: <input type="password" name="password" required></p>
+    <p>إعادة كلمة المرور: <input type="password" name="repeat_password" required></p>
+
+    <p>
+      <input type="submit" value="إرسال"> <tr>
+      <input type="reset" value="إعادة">
+    </p>
+  </form>
+</body>
+</html>
